@@ -1,0 +1,11 @@
+version: '3.2'
+#This file will setup a docker network named emerse (or what ever directory it is run from) it will then
+services:
+  jvm:
+    image: org.acme/pdf_jvm_service:latest
+    ports:
+      - 8080:8080
+  native:
+    image: org.acme/pdf_native_service:latest
+    ports:
+      - 8081:8080
